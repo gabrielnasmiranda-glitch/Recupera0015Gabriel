@@ -9,5 +9,3 @@ def calcular_media(nota1, nota2 ):
 
 media_calculada =calcular_media(nota1=n1, nota2=n2)
 print (f"o aluno {aluno} obteve a seguinte media: {media_calculada}")
-
-        # o codigo acima e o exercicio 2

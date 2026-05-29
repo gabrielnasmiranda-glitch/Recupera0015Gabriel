@@ -23,8 +23,7 @@ Durante o desenvolvimento, utilize os conceitos estudados na Unidade Curricular:
 * Estruturas condicionais;
 * Estruturas de repetição;
 * Funções;
-* Listas (vetores);
-* Matrizes ou listas aninhadas.
+* Listas;
 
 ---
 

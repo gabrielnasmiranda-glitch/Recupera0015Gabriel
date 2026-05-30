@@ -1,0 +1,9 @@
+lista = []
+for i in range(5) :
+    n = input("digite o número:")
+    lista.append(n)
+
+def maior_numero(lista):
+    return max (lista)
+print(maior_numero(lista))
+

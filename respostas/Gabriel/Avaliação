@@ -1,0 +1,47 @@
+print("hello","world",sep="\n")
+
+alunos = []
+media = []
+situacao = []
+alunos_aprovados = 0 
+for i in range(1,6):
+
+    aluno = input(f"Digite o nome do aluno{i}:")
+    alunos.append(aluno)
+    n1 = float(input(f"Digite a primeira nota do {aluno}: "))
+    n2 = float(input(f"Digite a segunda nota do {aluno}: "))
+    n3 = float(input(f"Digite a terceira nota do {aluno}: "))
+    
+    def calcular_media(nota1,nota2,nota3):
+        return (nota1 + nota2 + nota3) / 3     
+    media.append (calcular_media(n1,n2,n3))
+    med = calcular_media(n1,n2,n3)
+
+    def verificar_situacao(m):
+        if m >= 60:
+            situacao.append("Aprovado!")
+        if 60 > m >= 40:
+            situacao.append("Recuperação!")    
+        if m < 40:
+            situacao.append("Reprovado!")
+    
+    verificar_situacao(med)
+
+    if med >= 60:
+        alunos_aprovados += 1
+        print(alunos_aprovados)
+    
+    
+
+print(" Nome      Média     Situação",
+"-------------------------------",
+f"{alunos[0]}   {media[0]}  {situacao[0]}",
+f"{alunos[1]}   {media[1]}  {situacao[1]}",
+f"{alunos[2]}   {media[2]}  {situacao[2]}",
+f"{alunos[3]}   {media[3]}  {situacao[3]}",
+f"{alunos[4]}   {media[4]}  {situacao[4]}",
+sep="\n")    
+ 
+print (f"A quantidade de alunos aprovados são: {alunos_aprovados}")
+
+
